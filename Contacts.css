@@ -1,0 +1,317 @@
+*{
+  padding:0px;
+  margin: 0px;
+}
+
+h2{
+  Color: cyan;
+  Margin: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px;
+}
+
+h2:hover{
+  Color: Skyblue;
+}
+
+body{
+  font-family: "poppine",sans-serif;
+  background: #0f123a;
+  color: white;
+}
+
+nav{
+  width: 100%;
+  padding: 1rem 10%;
+  background: #0f125a;
+  border-bottom: 1px solid #0f123a;
+  backdrop-filter: blur(25px);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 0 0 5px;
+}
+
+.logo{
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: cyan;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: 0 0 2px;
+}
+
+.nav-links li a {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links li a:hover {
+  color: cyan;
+  text-shadow: 0 0 5px cyan;
+}
+
+.btn{
+  padding: 20px;
+  color: cyan;
+  font-size: 2rem;
+  margin-left: 3rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  text-shadow: 0 0 2px;
+}
+  
+.btn:hover{
+  color: darkcyan;
+}
+
+/* CONTACT PAGE */
+.Main {
+  width: 90%;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  
+  background: #ffffff;
+  border-radius: 20px;
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITLE */
+.Main h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #111;
+}
+
+/* LABEL */
+.Main label {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* INPUT */
+.Main input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  
+  background: #f8f8f8;
+  color: #222;
+  
+  font-size: 15px;
+  outline: none;
+  
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.Main input:focus {
+  border-color: #111;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+/* MESSAGE */
+.Main input#message {
+  padding-bottom: 70px;
+}
+
+/* BUTTON */
+#submit {
+  width: 100%;
+  padding: 15px;
+  
+  margin-top: 10px;
+  
+  border: none;
+  border-radius: 10px;
+  
+  background: #111;
+  color: white;
+  
+  font-size: 16px;
+  font-weight: bold;
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submit:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  
+  .Main {
+    width: 92%;
+    margin: 35px auto;
+    padding: 25px 20px;
+  }
+  
+  .Main h1 {
+    font-size: 28px;
+  }
+  
+  .Main input {
+    padding: 13px;
+  }
+  
+  #submit {
+    padding: 14px;
+  }
+}
+
+.Main textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    background: #f8f8f8;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+
+    resize: vertical;
+    outline: none;
+}
+
+.Main textarea:focus {
+    border-color: #111;
+    background: white;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    nav {
+        padding: 1rem 5%;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* PHONE */
+@media (max-width: 600px) {
+
+    h2 {
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
+
+    nav {
+        padding: 1rem 3%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .Main {
+        width: 92%;
+        margin: 30px auto;
+        padding: 25px 18px;
+    }
+
+    .Main h1 {
+        font-size: 28px;
+    }
+
+    .Main label {
+        font-size: 14px;
+    }
+
+    .Main input,
+    .Main textarea {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #submit {
+        font-size: 15px;
+        padding: 13px;
+    }
+}
+
+
+/* SMALL PHONE */
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 7px;
+    }
+
+    .nav-links li a {
+        font-size: 0.85rem;
+    }
+
+    .Main {
+        width: 94%;
+        padding: 20px 15px;
+    }
+
+    .Main h1 {
+        font-size: 24px;
+    }
+
+}
+  

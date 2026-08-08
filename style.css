@@ -1,0 +1,225 @@
+*{
+  padding:0px;
+  margin: 0px;
+}
+
+h2{
+  Color: cyan;
+  Margin: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px;
+}
+
+h2:hover{
+  Color: Skyblue;
+}
+
+body{
+  font-family: "poppine",sans-serif;
+  background: #0f123a;
+  color: white;
+}
+
+nav{
+  width: 100%;
+  padding: 1rem 10%;
+  background: #0f125a;
+  border-bottom: 1px solid #0f123a;
+  backdrop-filter: blur(25px);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 0 0 5px;
+}
+
+.logo{
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: cyan;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: 0 0 2px;
+}
+
+.nav-links li a {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links li a:hover {
+  color: cyan;
+  text-shadow: 0 0 5px cyan;
+}
+
+.btn{
+  padding: 20px;
+  color: cyan;
+  font-size: 2rem;
+  margin-left: 3rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  text-shadow: 0 0 2px;
+}
+  
+.btn:hover{
+  color: darkcyan;
+}
+  
+
+#text-home{
+  margin-bottom: 2rem;
+}
+
+#P1-home{
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  margin-left: 6rem;
+  margin-top: 5rem;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+}
+
+.Container-home{
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 13.5rem;
+}
+
+/* HOME PAGE RESPONSIVE */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    nav {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    #P1-home {
+        width: 90%;
+        margin: 4rem auto 0;
+        font-size: 1.5rem;
+    }
+
+    .Container-home {
+        width: 90%;
+        margin: 0 auto 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* PHONE */
+@media (max-width: 600px) {
+
+    h2 {
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
+
+    nav {
+        padding: 1rem 3%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        margin-left: 0;
+        padding: 10px 20px;
+    }
+
+    #P1-home {
+        width: 90%;
+        margin: 2rem auto 0;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    #text-home {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .Container-home {
+        width: 90%;
+        margin: 0 auto 2rem;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+
+/* SMALL PHONE */
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links li a {
+        font-size: 0.9rem;
+    }
+
+    #text-home {
+        font-size: 1.4rem;
+    }
+
+    #P1-home,
+    .Container-home {
+        width: 92%;
+        font-size: 0.9rem;
+    }
+}
